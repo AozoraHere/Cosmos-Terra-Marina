@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_sky.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Sky Exploration</title>
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xd0vhoa204");
+</script>
+</head>
+<body>
+    <audio id="audioGalaksi"></audio>
+
+    <nav class="nav-bar">
+        <div class="nav-links">
+           <a class="nav-link" href="index.html">Home</a>
+        <span class="nav-active">Sky Exploration</span>
+        <a class="nav-link" href="space.html">Space Exploration</a>
+        <a class="nav-link" href="earth.html">Earth Exploration</a>
+        <a class="nav-link" href="ocean.html">Ocean Exploration</a>
+        <a class="nav-link" href="about.html">About</a>
+        </div>
+        
+        <div class="nav-logo">
+           <img src="img/logo/logo.webp" alt="CTM Logo">
+        </div>
+        
+        
+        <div class="music-container">
+            <span class="music-theme-text">🎵 Sky Atmosphere Theme:</span>
+            <div class="music-buttons">
+                <button id="tombolMusik" class="btn-solid" onclick="kontrolMusik()">▶️ Play Audio</button>
+                <button class="btn-outline" onclick="gantiLagu()">🔀 Switch Track</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <header>
+            <h1>☁️ Exploration Deeper into the Earth's Sky</h1>
+            <p><i>Contemplating the beauty of the atmosphere, colors, and phenomena above our heads.</i></p>
+        </header>
+
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2>Exploring the Atmosphere and Its Phenomena</h2>
+            <p>Welcome to the special page that will discuss everything about the sky!</p>
+        </div>
+
+        <section class="flex-container">
+            <div class="text-box">
+                <h3>1. Definition of Sky</h3>
+                <p>The atmosphere is Earth's protective shield that blocks deadly solar radiation and provides oxygen. The sky looks blue due to Rayleigh Scattering. When sunlight hits atmospheric gases, blue light—which has shorter wavelengths—is scattered in all directions, making the daytime sky appear bright blue.</p>
+            </div>
+            <div class="image-box" style="flex-shrink: 0; min-width: 300px;">
+                 <img src="img/page-sky/atmosphere.jpg" alt="space">
+            </div>
+        </section>
+
+        <section class="bab-objek bab-fenomena">
+            <div class="judul-objek" style="margin-bottom: 40px;">
+                <h3>2. Sky Phenomena</h3>
+                <p>Our sky often puts on magical natural light shows. Here are some of them:</p>
+            </div>
+            
+            <div class="objek-baris-atas">
+                <div class="kartu-objek">
+                    <img src="img/page-sky/aurora.jpg" alt="Supernova">
+                    <h4>A. Aurora</h4>
+                    <p>Dancing green and reddish-purple curtains of light at the poles, created when solar winds collide with Earth's magnetic field.</p>
+                </div>
+
+                <div class="kartu-objek">
+                    <img src="img/page-sky/halo-matahari.jpg" alt="Galactic Collision">
+                    <h4>B. Solar Halos</h4>
+                    <p>A beautiful rainbow-like ring around the sun, caused by light refracting through ice crystals in high cirrus clouds.</p>
+                </div>
+            </div>
+
+            <div class="objek-baris-bawah">
+                <div class="kartu-raksasa">
+                    <img src="img/page-sky/pelangi-api.jpg" alt="Meteor Shower">
+                    <div class="teks-raksasa">
+                        <h4>C. Fire Rainbows (Circumhorizontal Arc)</h4>
+                        <p>A rare phenomenon where clouds glow with rainbow colors. It happens only when the sun is very high and its light passes through flat ice crystals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bab-objek bab-awan">
+            <div class="judul-objek" style="margin-bottom: 40px;">
+                <h3>3. Sky Classification</h3>
+                <p>Clouds are classified into different types based on their shapes. Here are three major clouds you should know:</p>
+            </div>
+            
+            <div class="objek-baris-atas">
+                <div class="kartu-objek">
+                    <img src="img/page-sky/cumulus.jpg" alt="Planet">
+                    <h4>Cumulus Clouds</h4>
+                    <p>Fluffy, cotton-like clouds that usually appear during bright, clear weather.</p>
+                </div>
+
+                <div class="kartu-objek">
+                    <img src="img/page-sky/stratus.jpg" alt="Constellation">
+                    <h4>Stratus Clouds</h4>
+                    <p>Flat, gray, and layered clouds that cover the sky like a blanket, bringing gloomy or overcast weather.</p>
+                </div>
+            </div>
+
+            <div class="objek-baris-bawah">
+                <div class="kartu-raksasa">
+                    <img src="img/page-sky/cumulonimbus.jpg" alt="Galaxy">
+                    <div class="teks-raksasa">
+                        <h4>Cumulonimbus Clouds (The Storm King)</h4>
+                        <p>Giant tower-shaped clouds that are highly dangerous, as they produce severe weather, heavy rain, lightning, and tornadoes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="statusMusik"></div>
+    <script src="js/audio-sky.js"></script>
+</body>
+</html>

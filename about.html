@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Character Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_about.css">
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xd0vhoa204");
+</script>
+</head>
+<body>
+
+    <div class="hud-left-container">
+        <a href="index.html" class="back-home-btn" onmouseover="playHoverSound()">🏠 Return to Earth</a>
+        <div class="hud-system-info">
+            <span class="hud-glow-text">🛰️ COORD: 04° 23' 11" N / 101° 41' 02" E</span>
+            <span class="hud-sub-text">SYSTEM: CORE-M-7 // AUTH_BYPASS</span>
+        </div>
+    </div>
+
+    <div class="hud-right-container">
+        <div id="realtimeClock" class="hud-clock">00:00:00 UTC</div>
+        <div class="music-status-text">
+    <div class="desktop-text">
+        <div>♪ SUB-SPACE</div>
+        <div>AUDIO LINK</div>
+    </div>
+
+    <div class="mobile-text">
+        ♪ AUDIO
+    </div>
+</div>
+
+    <button id="btnMuteAbout"
+            onclick="toggleMuteAbout()"
+            class="btn-hud-music">
+        TRACKING
+    </button>
+</div>
+
+    <div id="gate-overlay">
+        <div class="rocket-container" id="rocket">🚀</div>
+        <div class="gate-title">PREPARING ORBITAL INSERTION</div>
+        <button class="btn-launch" onclick="bukaGerbang()">LAUNCH MISSION</button>
+    </div>
+
+    <main id="main-content">
+        
+        <button class="nav-btn prev-btn" onclick="geserKartu(-1)">◀</button>
+
+        <div class="slider-wrapper">
+            <div class="slider-track" id="sliderTrack">
+                
+                <div class="profile-card active">
+                    <div class="avatar-box">👨‍🚀</div>
+                    <h1 class="font-hud">Skyy?</h1>
+                    <h2 class="font-hud">Project Lead & Space Enthusiast</h2>
+                    <div class="typing-container">
+                        <p id="text-profile">Welcome to my cosmic digital station! This website is an exploration journey to combine the beauty of astronomy with web technology. Glad to have you aboard, voyager.</p>
+                    </div>
+                    <div class="skills-container">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="avatar-box">📡</div>
+                    <h1 class="font-hud">COMMUNICATION DECK</h1>
+                    <h2 class="font-hud">Connect Across the Galaxy</h2>
+                    <div class="typing-container">
+                        <p id="text-comm">Don't get lost in the deep vacuum of space. Let's stay connected! Drop a message or follow my journey through the sub-space links below:</p>
+                    </div>
+                    <div class="social-container">
+                        <a href="https://www.instagram.com/skyyyyajaaa_?igsh=ZW91MGlzMjgyZHdr" target="_blank" class="social-btn" onmouseover="playHoverSound()">📷 Instagram</a>
+                        <a class="social-btn" href="#" onclick="copyDiscord()">
+                             🎮 Discord
+                        </a>
+                        <a href="https://github.com/username_lu" target="_blank" class="social-btn disabled" onmouseover="playHoverSound()">💻 GitHub</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="avatar-box">✨</div>
+                    <h1 class="font-hud">TRANSMISSION END</h1>
+                    <h2 class="font-hud">Safe Travels, Voyager</h2>
+                    <div class="typing-container">
+                        <p id="text-end">Thank you for exploring this minimalist sanctuary. May your skies remain clear, and may your curiosity always pull you toward the unknown. Station shutting down...</p>
+                    </div>
+                    <div class="status-alert">
+                        ⚠️ STATUS: SIGNING OFF • OVER AND OUT.
+                    </div>
+                    <div style="margin-top: 25px;">
+                        <a href="index.html" class="social-btn" style="border-color: #64dfdf; color: #64dfdf; display: inline-block;" onmouseover="playHoverSound()">🚀 Land on Earth (Home)</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="nav-btn next-btn" onclick="geserKartu(1)">▶</button>
+    </main>
+
+    <audio id="audioAbout" src="audio/space-1.mp3" loop></audio>
+    <audio id="soundClick" src="audio/click.mp3"></audio> 
+    <audio id="soundHover" src="audio/hover.mp3"></audio> 
+
+    <script src="js/audio-about.js"></script>
+</body>
+</html>

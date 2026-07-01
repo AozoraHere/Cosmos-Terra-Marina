@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../font/Merriweather-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
+}
+
+body {
+    background-color: #14130f;
+    color: #e0e6ed;
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #1c1810 0%, #0d0b08 100%);
+}
+
+header h1, .main-header h1, .judul-section, h2, h3, h4 {
+    font-family: 'Merriweather', 'Segoe UI', sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar {
+    background: rgba(28, 24, 16, 0.85) !important;
+}
+
+#statusMusik {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ffd166 !important;
+    text-align: center;
+    padding: 10px 0 6px 0 !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    font-style: italic;
+    letter-spacing: 1px;
+    z-index: 999999 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(28, 24, 16, 0.7) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (min-width: 768px) {
+    #statusMusik {
+        padding: 15px 0 10px 0 !important;
+        font-size: 14px !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #e2e8f0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.text-box { flex: 1; }
+
+.image-box img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #8a9a5b;
+    background-color: #1f1c14;
+    padding: 8px;
+    box-shadow: 0 10px 20px rgba(138, 154, 91, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-box img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(138, 154, 91, 0.6);
+}
+
+.bab-objek { margin-bottom: 60px; }
+
+.judul-section {
+    color: #ffb703;
+    border-left: 4px solid #8a9a5b;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.objek-baris-atas {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.objek-baris-bawah {
+    display: flex;
+    justify-content: center;
+}
+
+.kartu-objek {
+    flex: 1;
+    background-color: #1f1c14;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kartu-objek:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(138, 154, 91, 0.2);
+}
+
+.kartu-objek img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #8a9a5b;
+}
+
+.kartu-raksasa {
+    width: 100%;
+    max-width: 850px;
+    background-color: #1f1c14;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kartu-raksasa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(138, 154, 91, 0.2);
+}
+
+.kartu-raksasa img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #8a9a5b;
+}
+
+.teks-raksasa { flex: 1; }
+.teks-raksasa h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+    font-size: 1.2rem;
+}
+
+/* Phenomena section - earthy red/orange tone (volcanic) */
+.bab-fenomena .kartu-objek,
+.bab-fenomena .kartu-raksasa {
+    background-color: #1a120e;
+    border: 1px solid #b5471b;
+}
+.bab-fenomena .kartu-objek img,
+.bab-fenomena .kartu-raksasa img {
+    border: 2px solid #d65a2a;
+}
+.bab-fenomena .kartu-objek:hover,
+.bab-fenomena .kartu-raksasa:hover {
+    box-shadow: 0 10px 20px rgba(214, 90, 42, 0.5);
+}
+
+/* Classification section - green tone (forest/mountain) */
+.bab-klasifikasi .kartu-objek,
+.bab-klasifikasi .kartu-raksasa {
+    background-color: #10160e;
+    border: 1px solid #4a7c2f;
+}
+.bab-klasifikasi .kartu-objek img,
+.bab-klasifikasi .kartu-raksasa img {
+    border: 2px solid #5e9c3a;
+}
+.bab-klasifikasi .kartu-objek:hover,
+.bab-klasifikasi .kartu-raksasa:hover {
+    box-shadow: 0 10px 20px rgba(94, 156, 58, 0.5);
+}
+
+/* Mysteries section - deep brown/purple tone */
+.bab-misteri .kartu-objek,
+.bab-misteri .kartu-raksasa {
+    background-color: #14100e;
+    border: 1px solid #6b4226;
+}
+.bab-misteri .kartu-objek img,
+.bab-misteri .kartu-raksasa img {
+    border: 2px solid #8a5a35;
+}
+.bab-misteri .kartu-objek:hover,
+.bab-misteri .kartu-raksasa:hover {
+    box-shadow: 0 10px 20px rgba(138, 90, 53, 0.5);
+}
+
+@media (max-width: 768px) {
+    .flex-container, .objek-baris-atas, .kartu-raksasa {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .kartu-raksasa { text-align: center; }
+    .kartu-raksasa img {
+        width: 100%;
+        height: 200px;
+    }
+    .image-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .image-box img {
+        display: block;
+        margin: 0 auto !important;
+        box-shadow: 0 10px 20px rgba(138, 154, 91, 0.5) !important;
+        transform: none !important;
+    }
+    .bab-fenomena .kartu-objek,
+    .bab-fenomena .kartu-raksasa {
+        box-shadow: 0 10px 20px rgba(214, 90, 42, 0.4) !important;
+        transform: none !important;
+    }
+    .bab-klasifikasi .kartu-objek,
+    .bab-klasifikasi .kartu-raksasa {
+        box-shadow: 0 10px 20px rgba(94, 156, 58, 0.4) !important;
+        transform: none !important;
+    }
+    .bab-misteri .kartu-objek,
+    .bab-misteri .kartu-raksasa {
+        box-shadow: 0 10px 20px rgba(138, 90, 53, 0.4) !important;
+        transform: none !important;
+    }
+}
