@@ -28,7 +28,7 @@ function kontrolMusik() {
         
         statusMusik.style.display = "block";
         statusMusik.style.background = "transparent"
-        statusMusik.innerHTML = "🎵 Now Playing: Nature Vibes " + (indeksLagu + 1) + " ...";
+        statusMusik.innerHTML = "🎵 Now Playing: Nature Vibes" + (indeksLagu + 1) + " ...";
     } else {
         audio.pause();
         sedangMuter = false;
@@ -50,7 +50,7 @@ function gantiLagu() {
         tombolMusik.innerHTML = "⏸️ Pause Music";
         
         statusMusik.style.display = "block";
-        statusMusik.innerHTML = "🎵 Now Playing: Nature Vibes " + (indeksLagu + 1) + " ...";
+        statusMusik.innerHTML = "🎵 Now Playing: Nature Vibes" + (indeksLagu + 1) + " ...";
     } else {
         tombolMusik.innerHTML = "▶️ Play Audio" + (indeksLagu + 1);
         statusMusik.style.display = "none"; 
